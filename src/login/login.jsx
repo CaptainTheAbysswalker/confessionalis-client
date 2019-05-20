@@ -35,8 +35,7 @@ class Login extends Component {
   onSubmit = async values => {
     try {
       const { email, password } = values;
-      const loginData = await this.props.login(email, password);
-      console.log("loginData", loginData);
+      await this.props.login(email, password);
     } catch (error) {
       console.log("error", error);
     }

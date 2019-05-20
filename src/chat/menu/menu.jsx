@@ -44,7 +44,6 @@ componentDidMount(){
         <h3>Online Users</h3>
           {this.props.onlineUsers.data.onlineUsers.map((item, i) => {
             const login = item.displayName;
-            console.log("user", login);
             return (
               <li key={`contactId-${i}`} className="contactData">
                 <p className="contactLogin">{'Login: ' + login}</p>
@@ -75,9 +74,7 @@ class Menu extends Component {
   }
   logOut = async id => {
     try {
-      console.log("id", id);
-      const logoutData = await this.props.logout(id);
-      console.log("logoutData", logoutData);
+      await this.props.logout(id);
     } catch (error) {
       console.log("error", error);
     }

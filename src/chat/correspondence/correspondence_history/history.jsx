@@ -14,7 +14,6 @@ class History extends Component {
   componentDidMount() {
     const socket = this.props.socket;
     socket.on("newMessage", data => {
-      console.log(data);
       this.setState({ messageHistory: this.state.messageHistory.concat(data) });
     });
   }
@@ -29,7 +28,6 @@ class History extends Component {
     this.scrollToBottom();
   }
   render() {
-    console.log("Message history0", this.state.messageHistory);
     return (
       <div className="history_box">
         <ul className="message_history" ref="messageList">
@@ -37,7 +35,6 @@ class History extends Component {
             const message = item.message;
             const time = item.time;
             const user = item.user;
-            console.log("item", message);
             return (
               <li
                 key={`messageId-${i}`}
