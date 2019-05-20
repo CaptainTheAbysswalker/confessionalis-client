@@ -1,0 +1,50 @@
+.login-box{
+    height: 330px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+    form{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    input{
+        margin: 0;
+        width: 100%;
+    }
+
+    .login__data{
+        display: flex;
+        height: 30%;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    a{
+        text-decoration: none;
+    }
+
+.errorBox{
+    color: red;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+.loginData{
+    background-color: rgb(190, 204, 203);
+    text-indent: 5px;
+}
+::placeholder{
+    color: rgb(86, 128, 125);
+}
+input:focus::placeholder { color:transparent; }
