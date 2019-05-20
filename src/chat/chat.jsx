@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as 
-  Redirect,
-
-} from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { sendMessage } from "../redux/send_message";
 import "./chat.scss";
 import Menu from "./menu/menu.jsx";

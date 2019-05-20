@@ -2,7 +2,7 @@ import { Form, Field } from "react-final-form";
 import { connect } from "react-redux";
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./registration.scss";
 
 import {

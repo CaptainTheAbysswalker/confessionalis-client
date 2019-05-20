@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./menu.scss";
 import { connect } from "react-redux";
-import { BrowserRouter as  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 import {
@@ -75,7 +75,6 @@ class Menu extends Component {
   }
   logOut = async id => {
     try {
-      debugger;
       console.log("id", id);
       const logoutData = await this.props.logout(id);
       console.log("logoutData", logoutData);

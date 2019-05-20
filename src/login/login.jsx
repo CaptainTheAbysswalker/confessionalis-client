@@ -1,7 +1,7 @@
 import { Form, Field } from "react-final-form";
 import { connect } from "react-redux";
 import React, { Component } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import { Redirect } from "react-router";
 import "./login.scss";
 
@@ -99,7 +99,7 @@ class Login extends Component {
                 <button type="submit" disabled={loading || submitting}>
                   Login
                 </button>
-                <Link to="/registration/">
+                <Link to="/registration">
                   <button type="button">Registration</button>
                 </Link>
               </div>

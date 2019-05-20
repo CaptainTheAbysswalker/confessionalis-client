@@ -7,12 +7,11 @@ import Registration from "./registration/registration.jsx";
 
 
 class App extends Component {
-  componentDidMount() {
+
+  render() {
     if (!!document.cookie) {
       return(<Redirect to="/chat/" />);
     }
-  }
-  render() {
     return (
       <Router>
         <div className="App">
